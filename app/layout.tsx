@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import SectionDots from "../components/SectionDots";
+import NativeWheel from "../components/NativeWheel";
 
 export const metadata: Metadata = {
   title: "Golden Daisy Hotel | Phu Quoc",
@@ -12,6 +13,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en">
       <body>
         {children}
+        <NativeWheel />
         <SectionDots />
       </body>
     </html>
