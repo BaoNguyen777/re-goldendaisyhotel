@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import SectionDots from "../components/SectionDots";
 
 export const metadata: Metadata = {
   title: "Golden Daisy Hotel | Phu Quoc",
@@ -7,5 +8,12 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body>{children}</body></html>;
+  return (
+    <html lang="en">
+      <body>
+        {children}
+        <SectionDots />
+      </body>
+    </html>
+  );
 }
